@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none!important;
+}
+
+ul li {
+  list-style: none;
+}
+
+.clearfix::before, .clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.top {
+  box-sizing: border-box;
+  height: 36px;
+  line-height: 36px;
+  border-bottom: 1px solid #ccc;
+  color: #414141;
+  font-size: 12px;
+}
+
+.left-link {
+  float: left;
+}
+
+.right-link {
+  float: right;
+}
+
+.top .container span {
+  isplay: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+
+.top .container a {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  color: #414141;
+}
+
+.top .container a:hover {
+  color: #2a6496;
+}
+
+.top .container .line {
+  color: #ccc;
+  padding: 0 7px;
+  position: relative;
+  top: -1px;
+}
+
+.top-phone {
+  cursor: inherit;
+}
+
+.top .container i {
+  margin-right: 3px;
+  position: relative;
+  top: 1px;
+  font-size: 15px;
+}
+
+.top .right-link .in-gh {
+  background: #d63536;
+  color: #fff;
+  padding: 0 20px;
+  margin-right: 10px;
+}
+
+nav {
+  padding: 24px 0;
+}
+
+.menu {
+  float: right;
+  color: #333;
+  font-size: 18px;
+}
+
+nav .container .menu li {
+  display: inline-block;
+    box-sizing: border-box;
+}
+
+nav .container .menu li a {
+  padding: 10px 10px;
+  border: 1px #fff solid;
+  color: #414141;
+
+}
+
+nav .container .menu li a:hover {
+    border-bottom: 3px solid #dd3137;
+    color: #2a6496;
+
+  box-sizing: border-box;
+
+}
+
+nav .container .menu li a:active {
+    border-bottom: 3px solid #dd3137;
+}

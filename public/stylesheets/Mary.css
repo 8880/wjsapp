@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Mary-guide1{
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+.clearfix::before, .clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.news-bg {
+  background: #f3f3f3;
+  padding: 15px 0;
+}
+
+.news-box {
+  background: #f3f3f3;
+  border: 1px #e3e3e3 solid;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.news-box .news-left {
+  float: left;
+  width: 18%;
+}
+
+.news-box .news-left li {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  color: #333;
+  border: 1px #e3e3e3 solid;
+  text-align: center;
+  background: #f8f8f8;
+  border-left: none;
+  border-top: none;
+}
+
+.news-box .news-left li a {
+  color: #414141;
+  text-decoration: none;
+}
+
+.news-box .news-left li:hover{
+  background-color: #fff;
+  border-left: 3px solid red;
+}
+
+.news-box .news-right {
+  background: #fff;
+  display: table;
+  padding: 25px;
+  font-size: 14px;
+  height: 100%;
+}
+
+.show li {
+  display: none;
+}
+
+.show li.active {
+  display: block;
+}
+.kl{
+  background-color: #fff    !important;
+  border-left: 3px solid red !important;
+}
+/*************************操作指南**************************************************/
+.Mary-tab{
+  width: 932px;
+  background: #fff;
+  padding: 25px;
+  font-size: 14px;
+}
+
+.Mary-tab .Mary-part1,.Mary-tab .Mary-part2,.Mary-tab .Mary-part3,.Mary-tab .Mary-part4{
+  background-size: 38%;
+  padding: 90px 55px;
+  border-bottom: 1px #cbd0d3 solid
+}
+
+.Mary-tab .Mary-part2,.Mary-tab .Mary-part4{
+  text-align: right;
+}
+
+.Mary-tab .Mary-part1{
+  background: url("../images/ng1.jpg") no-repeat 77% center;
+}
+.Mary-tab .Mary-part2{
+  background: url("../images/ng2.jpg") no-repeat 9% center;
+}
+.Mary-tab .Mary-part3{
+  background: url("../images/ng3.jpg") no-repeat 77% center;
+}
+.Mary-tab .Mary-part4{
+  background: url("../images/ng4.jpg") no-repeat 9% center;
+}
+
+.Mary-tab .Mary-part1 .Mary-jion1,
+.Mary-tab .Mary-part2 .Mary-jion2,
+.Mary-tab .Mary-part3 .Mary-jion3,
+.Mary-tab .Mary-part4 .Mary-jion4{
+  font-size: 20px;
+  line-height: 45px;
+  padding: 5px 0 0 35px;
+}
+
+.Mary-tab .Mary-part1 .Mary-jion1{
+  background: url("../images/ng01.jpg") no-repeat left center;
+  background-size:20px;
+}
+.Mary-tab .Mary-part2 .Mary-jion2{
+  background: url("../images/ng02.jpg") no-repeat right center;
+  background-size:20px;
+  padding: 5px 42px 0 40px;
+  background-position-x: 83%;
+}
+.Mary-tab .Mary-part3 .Mary-jion3{
+  background: url("../images/ng03.jpg") no-repeat left center;
+  background-size:20px;
+}
+.Mary-tab .Mary-part4 .Mary-jion4{
+  background: url("../images/ng04.jpg") no-repeat right center;
+  background-size:20px;
+  padding: 5px 80px 0 40px;
+  background-position-x: 83%;
+}
+
+.Mary-tab .Mary-message{
+  font-size: 16px;
+  line-height: 22px;
+  color: #5e5e5e;
+  margin-bottom: 10px;
+}
+
+.Mary-tab .Mary-btn{
+  display: inline-block;
+  width: 160px;
+  height: 35px;
+  background: #e43737;
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/**********************新手指南************************************************/
+
+.Mary-title>img{
+  display: inline-block;
+  float: left;
+  width: 80%;
+  max-width: 190px;
+  border: 1px #e3e3e3 solid;
+  padding: 2px;
+}
+.Mary-title .Mary-jiyu{
+  display: inline-block;
+  padding: 0 0 0 90px;
+}
+
+.Mary-title .Mary-jiyu>li{
+  display: block;
+  font-size: 14px;
+  line-height: 28px;
+  padding: 10px 15px;
+  border-bottom: 1px #ccc dashed;
+}
+
+.Mary-title .Mary-jiyu>li h3{
+  color: #ff9201;
+  font-size: 20px;
+}
+
+.Mary-title .Mary-sign{
+  float: right;
+  border: none;
+}
+
+.Mary-h2M{
+  padding: 110px 0 15px 0;
+}
+
+.Mary-h2{
+  padding: 35px 0 15px 0;
+}
+
+.Mary-point{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #dd2c37;
+  margin-bottom: 4px;
+}
+
+.Mary-mark{
+color: #f00;
+}
+
+.Mary-rule{
+  font-size: 14px;
+  color: #666;
+}
+
+.Mary-table{
+  width: 100%;
+  border: 1px solid #c6cbcf;
+  border-collapse: collapse;
+}
+
+.Mary-table tr:nth-child(2n+1){
+  background-color: #f2f2f2
+}
+.Mary-table tr:nth-child(2n){
+  background-color: #fdfdfd
+}
+
+.Mary-table tr td{
+  border-right: 1px #e0e3e5 solid;
+  padding: 13px 10px;
+  color: #666;
+  line-height: 26px;
+}
+.Mary-table tr td:nth-child(2){
+  background: url("../images/g-icon1.png") right center no-repeat;
+  padding-right: 50px;
+  background-position-x:96%;
+}
+.Mary-table tr td:nth-child(3){
+  background: url("../images/g-icon2.png") right center no-repeat;
+  padding-right: 50px;
+  background-position-x:96%;
+}
+
+.Mary-news{
+  display: inline-block;
+  padding-left: 200px;
+}
+
+
+/*******************VIP投资人************************************************/
+.Mary-introduce{
+  border-bottom: 1px #cbd0d3 solid;
+  padding-bottom: 170px;
+  padding-top: 15px;
+}
+.Mary-introduce>img{
+  display: block;
+  width: 140px;
+  padding-right: 20px;
+  float: left;
+  padding-top: 10px;
+}
+
+.Mary-introduce>div{
+  float: left;
+  width: 723px;
+  line-height: 28px;
+
+}
+.Mary-introduce .Mary-h3{
+  padding: 17px 0 20px 0;
+  color: #333;
+}
+
+.Mary-introduce  .Mary-con{
+  color: #666;
+}
+.Mary-vip2h3{
+  width: 100%;
+  text-align: center;
+  padding: 40px 0 40px 0;
+  display: inline-block;
+}
+.Mary-vip2{
+  width: 30%;
+  float: left;
+  text-align: center;
+  padding-left: 29px;
+}
+.Mary-vip2 ul>li{
+  display: block;
+  padding-bottom: 10px;
+}
+
+.Mary-vip2 ul li img{
+  width: 100px;
+}
+
+.Mary-vip2 ul li:nth-child(3){
+  color: #666;
+  font-size: 14px;
+  line-height: 28px
+}
+
+.Mary-grow{
+  border-bottom: 1px #cbd0d3 solid;
+}
+
+.Mary-vipTab{
+  width: 100%;
+  border: 1px solid #c6cbcf;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.Mary-vipTab tr td{
+  background: #f0f9ff;
+  border-right: 1px #e0e3e5 solid;
+  border-bottom: 1px #e0e3e5 solid;
+  padding: 13px 10px;
+  color: #666;
+  line-height: 26px;
+}
+
+.Mary-tp{
+  line-height: 28px;
+  color: #666;
+  padding: 20px 0;
+}
+
+.Mary-equPart{
+  border-bottom: 1px #e0e3e5 solid;
+  padding-bottom: 70px;
+}
+
+.Mary-equ{
+  border-bottom: 1px  #ccc solid;
+  width: 100%;
+  text-align: center;
+}
+
+.Mary-equ span{
+  font-size: 20px;
+  display: inline-block;
+  width: 140px;
+  color: #333;
+  background: #fff;
+  position: relative;
+  top: -16px;
+}
+
+
+.show li .Mary-tab .Mary-question{
+  width: 100%;
+  padding: 8px 13;
+  cursor: pointer;
+  line-height: 35px;
+  border: 1px solid #CDD0D5;
+  margin-bottom: 0;
+  background: #fff;
+  color: #333;
+  text-align: left;
+  border-bottom: none;
+}
+
+
+
+.Mary-tab .Mary-question1{
+  padding: 0
+}
+.Mary-tab .Mary-answer{
+  padding: 15px 0 15px 40px;
+  line-height: 30px;
+  color: #9A9A9A;
+  border: 1px solid #CDD0D5;
+  border-top: none;
+  background-color: #FCFCFC;
+}
+.Mary-tab .Mary-answer ul li{
+  display: block;
+}
+
+ .Mary-tab4 .Mary-p {
+   font-size: 20px;
+   padding: 20px 0;
+
+ }
+
+ .Mary-bank{
+   border-bottom: 1px #dd3137 solid;
+    color: #dd3137;
+    width: 59px;
+ }
+
+ .guide {
+   border-bottom: 3px #dd3137 solid;
+ }

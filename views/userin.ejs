@@ -1,0 +1,191 @@
+<%- include("ktop.ejs")%>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>微金所-我的账户</title>
+    <link rel="stylesheet" href="/stylesheets/aq-userbody-iconfont.css">
+    <style media="screen">
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    ul li{
+      list-style: none;
+    }
+    a{
+      text-decoration: none!important;
+    }
+    .clearfix{
+      clear:both;
+    };
+    .clearfix:after{
+      clear:both;
+      content:" "
+    };
+    .clearfix:before{
+      content:" ";
+      clear:both;
+    };
+
+    .user-body{
+      background: #f3f3f3;
+      padding: 20px 0;
+    }
+    .aq-container{
+      width: 1200px;
+      margin: 0 auto;
+      overflow:hidden;
+    }
+    .aq-left-side{
+      width: 217px;
+      height: 100%;
+      background: white;
+      box-sizing: border-box;
+      margin-right: 20px;
+      float: left;
+      border: 1px solid #e3e3e3;
+    }
+    .aq-left-side ul{
+      background: #f8f8f8;
+    }
+    .aq-left-side ul > li  i:first-child {
+      margin-right: 9px;
+      width: 26px;
+      display: inline-block;
+    }
+
+
+    .aq-left-side > ul > li > a{
+      line-height: 58px;
+      padding-left: 40px;
+      border-bottom: 1px solid #e3e3e3;
+      font-size: 16px;
+      display: block;
+      color: #333;
+    }
+    .aq-inside-ul {
+      background: white;
+      border-bottom: 1px solid #e3e3e3;
+      padding: 10px 0;
+    }
+    .aq-left-side .aq-inside-ul li a{
+      font-size: 14px;
+      line-height: 35px;
+      padding-left: 65px;
+      color: #333;
+    }
+
+    .aq-left-side .aq-inside-ul li:hover a{
+      color: #2a6496;
+    }
+    .inactives{
+      color: rgb(221, 49, 55)!important;
+    }
+
+    .inactives span{
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      display: inline-block;
+      width: 16px;
+    }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="user-body">
+      <div class="aq-container clearfix">
+        <div class="aq-left-side clearfix">
+          <ul class="yiji">
+        		<li><a href="#"><i class="iconfont icon-home"></i>账户首页</a></li>
+        		<li><a href="#" class="inactive"><i class="iconfont icon-qian"></i>我的资金 &nbsp; &nbsp; &nbsp;   <span><i class="iconfont icon-arrow-left-copy"></span></i></a>
+        			<ul class="aq-inside-ul" style="display: none">
+        				<li><a href="#">交易记录</a></li>
+                <li><a href="#">收益明细</a></li>
+        				<li><a href="#">充值</a></li>
+        				<li><a href="#">提现</a></li>
+        				<li><a href="#">我的银行卡</a></li>
+        				<li><a href="#">交易记录</a></li>
+        			</ul>
+        		</li>
+            <li><a href="#" class="inactive"><i class="iconfont icon-xinyongqia"></i>我的投资 &nbsp; &nbsp; &nbsp;   <span><i class="iconfont icon-arrow-left-copy"></span></i></a>
+              <ul class="aq-inside-ul" style="display: none">
+                <li><a href="#">投资记录</a></li>
+                <li><a href="#">回款计划</a></li>
+                <li><a href="#">债权转让</a></li>
+                <li><a href="#">预约投标</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="inactive"><i class="iconfont icon-gift"></i>我的奖励 &nbsp; &nbsp; &nbsp;   <span><i class="iconfont icon-arrow-left-copy"></span></i></a>
+              <ul class="aq-inside-ul" style="display: none">
+                <li><a href="#">我的代金券</a></li>
+                <li><a href="#">我的红包</a></li>
+                <li><a href="#">提现卷</a></li>
+                <li><a href="#">加息劵</a></li>
+                <li><a href="#">我的抽奖</a></li>
+                <li><a href="#">邀请好友</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="inactive"><i class="iconfont icon-card"></i>我的借款 &nbsp; &nbsp; &nbsp;   <span><i class="iconfont icon-arrow-left-copy"></span></i></a>
+              <ul class="aq-inside-ul" style="display: none">
+                <li><a href="#">借款记录</a></li>
+                <li><a href="#">还款安排</a></li>
+                <li><a href="#">申请借款</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="inactive"><i class="iconfont icon-shezhi"></i>个人设置 &nbsp; &nbsp; &nbsp;   <span><i class="iconfont icon-arrow-left-copy"></span></i></a>
+              <ul class="aq-inside-ul" style="display: none">
+                <li><a href="#">基本信息</a></li>
+                <li><a href="#">修改头像</a></li>
+                <li><a href="#">安全设置</a></li>
+                <li><a href="#">VIP权益</a></li>
+                <li><a href="#">消息列表</a></li>
+                <li><a href="#">问卷调查</a></li>
+              </ul>
+            </li>
+
+
+
+        	</ul>
+        </div>
+        <%- include("kuse.ejs")%>
+
+      </div>
+
+    </div>
+
+
+    <script src="/javascripts/jquery.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('.inactive').click(function(){
+        if($(this).siblings('ul').css('display')=='none'){
+          $(this).parent('li').siblings('li').removeClass('inactives');
+          $(this).addClass('inactives');
+          $(this).siblings('ul').slideDown(100).children('li');
+          if($(this).parents('li').siblings('li').children('ul').css('display')=='block'){
+            $(this).parents('li').siblings('li').children('ul').parent('li').children('a').removeClass('inactives');
+            $(this).parents('li').siblings('li').children('ul').slideUp(100);
+
+          }
+        }else{
+          //控制自身变成+号
+          $(this).removeClass('inactives');
+          //控制自身菜单下子菜单隐藏
+          $(this).siblings('ul').slideUp(100);
+          //控制自身子菜单变成+号
+          $(this).siblings('ul').children('li').children('ul').parent('li').children('a').addClass('inactives');
+          //控制自身菜单下子菜单隐藏
+          $(this).siblings('ul').children('li').children('ul').slideUp(100);
+
+          //控制同级菜单只保持一个是展开的（-号显示）
+          $(this).siblings('ul').children('li').children('a').removeClass('inactives');
+        }
+      })
+    });
+    </script>
+
+  </body>
+</html>
+<%- include("kbottom.ejs")%>

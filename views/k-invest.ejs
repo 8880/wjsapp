@@ -1,0 +1,163 @@
+<%- include("ktop") %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>投资</title>
+    <link rel="stylesheet" href="/stylesheets/css/normalize.min.css">
+    <link rel="stylesheet" href="/stylesheets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/stylesheets/css/k-invest.css">
+  </head>
+  <body>
+    <div class="k-content">
+      <div class="container clearfix">
+        <div class="k-left claerfix">
+          <input type="text" name="" value="" placeholder="输入关键字查询">
+          <i class="fa fa-search fa-lg"></i>
+        </div>
+        <div class="k-right clearfix">
+          <a>
+            <span data-toggle="modal" data-target="#myModal">
+              <i class="fa fa-calculator" aria-hidden="true"></i> 收益计算器
+            </span>
+          </a>
+          <a href="#">
+            <span>
+              <i class="fa fa-calendar-plus-o" aria-hidden="true"></i> 预约投标
+            </span>
+          </a>
+        </div>
+        <div class="clearfix">
+
+        </div>
+        <hr>
+        <div class="condition clearfix">
+          <a href="/about">
+            <img src="/images/aboutUs.jpg" alt="">
+          </a>
+          <table>
+            <tr id="date">
+              <td>产品期限:</td>
+              <td><button type="button" name="button" class="on" value="1">全部</button></td>
+              <td><button type="button" name="button" value="2" >1-3个月</button></td>
+              <td><button type="button" name="button" value="3">4-9个月</button></td>
+              <td><button type="button" name="button" value="4">10个月以上</button></td>
+            </tr>
+            <tr id="yield">
+              <td>产品收益:</td>
+              <td><button type="button" name="button" class="on" value='1'>全部</button></td>
+              <td><button type="button" name="button" value="2" >9%以下</button></td>
+              <td><button type="button" name="button" value="3" >9%-10%</button></td>
+              <td><button type="button" name="button" value='4' >10%-11%</button></td>
+              <td><button type="button" name="button" value="5">11%-12%</button></td>
+              <td><button type="button" name="button" value="6" >12%以上</button></td>
+            </tr>
+            <tr id="category">
+              <td>产品类型:</td>
+              <td><button type="button" name="button" class="on" value="1">全部</button></td>
+              <td><button type="button" name="button" value="2">微投资</button>
+                <span class='hot'></span>
+              </td>
+              <td><button type="button" name="button" value="3">月月盈</button></td>
+              <td><button type="button" name="button" value="4">海航通宝</button></td>
+              <td><button type="button" name="button" value="5">微金宝</button></td>
+              <td><button type="button" name="button" value="6">微转让</button></td>
+              <td><button type="button" name="button" value="7">稳赢保</button>
+                <span class='hot'></span>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+      <div class="container">
+
+        <ul class='k-sort'>
+          <span>排序方式:</span>
+          <li class="on" value="1">默认排序</li>
+          <li value="2">年化利率 <i class="fa fa-arrow-down" aria-hidden="true"></i></li>
+          <li value='3'>投资期限 <i class="fa fa-arrow-down" aria-hidden="true"></i></li>
+          <li value="4">产品类型 <i class="fa fa-arrow-down" aria-hidden="true"></i></li>
+          <li value='5'>产品星级 <i class="fa fa-arrow-down" aria-hidden="true"></i></li>
+        </ul>
+        <div class="k-result clearfix">
+
+            </div>
+          <hr>
+        <div value="1 0"></div>
+        <div id="page" class="page_div"></div>
+      </div>
+
+    </div>
+    <!-- 收益计算器 -->
+    <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade cal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">
+          <span class="calIcon"></span>收益计算器</h4>
+      </div>
+      <div class="modal-body">
+        <div class="wrap clearfix">
+          <div class="item clearfix">
+            <h4>选择参数</h4>
+            <div class="from-item">
+              投资金额:
+              <input type="text" id='investSum'>
+              <span>元</span>
+            </div>
+
+            <div class="from-item">
+              年化利率:
+              <input type="text" id='investYield'>
+              <span>%</span>
+            </div>
+
+            <div class="from-item">
+              借款期限:
+              <input type="text" id='investDate'>
+              <span>月</span>
+            </div>
+
+            <div class="from-item">
+              还款方式:
+              <select name="" id="">
+                <option value="">等额本息</option>
+                <option value="">利随本清</option>
+                <option value="">月付息到期还本</option>
+              </select>
+            </div>
+
+            <button type="button" id='computed'>计算</button>
+            <button type="button" id='reload'>重置</button>
+          </div>
+          <div class="item clearfix">
+            <h4>计算结果</h4>
+            <p>&nbsp;</p>
+            <p>本息合计:<span class='bx-result'></span></p>
+            <p > &nbsp; </p>
+            <p>利息合计: <span class='lx-result'></span></p>
+            <p >&nbsp;  </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="/javascripts/jquery.min.js" charset="utf-8"></script>
+    <%- include("kbottom") %>
+  
+    <script src="/javascripts/modal.js" charset="utf-8"></script>
+    <script src="/javascripts/paging2.js" charset="utf-8"></script>
+    <script src="/javascripts/k-invest.js" charset="utf-8"></script>
+
+
+  </body>
+</html>

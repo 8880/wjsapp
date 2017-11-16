@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../stylesheets/yueyueying.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="m-content m-bar">
+      <div class="m-bar-title">
+        <span class="title">月月盈</span>
+        <span　class="info">——每半月可申购赎回，最长期限24个月</span>
+          <div class="adventure">
+            <div class="main-c">
+            </div>
+          </div>
+
+
+
+      </div>
+      <div class="m-bar-income">
+        <span class="num">6-12</span>
+        <span class="per">%</span>
+        <div class="">
+          收益率
+        </div>
+        <div class="info">
+          (6%起，每半月增长0.2%，最高12%)
+        </div>
+      </div>
+      <div class="m-bar-people">
+        <span class="num">25510</span><br>
+        <span >已投资人次</span>
+      </div>
+      <div class="m-bar-star">
+        <div class="star-gray">
+          <div class="star-active">
+
+          </div>
+
+        </div>
+
+      </div>
+      <div class="m-bar-iner">
+        <span class="num">53.2</span>
+        <span class="per">万</span>
+        <div class="">
+          可投金额
+        </div>
+
+      </div>
+    </div>
+    <div class="m-content m-pro">
+      <div class="container">
+        <div class="row">
+          <div class=" col-md-6 col-sm-12">
+            <img src="../images/yueyue/trend.png" alt="" width="263px" height="180px;">
+
+          </div>
+          <div class=" col-md-6 col-sm-12">
+            <div class="m-form">
+              <p>
+                <span>可投金额: </span>
+                <span>532000</span>
+              </p>
+              <div class="">
+                <span>可用余额：</span>
+                <span>￥0元</span>
+                <a href="#">立即登录</a>
+                <p style="margin-top:10px;"><span>投资金额: </span><span><input type="text" name="" value=""></span></p>
+              </div>
+              <p><input type="checkbox" name="" value="">我同意<a href="#" class="per">《月月盈服务协议》</a></p>
+              <button type="button" name="button">立即赚钱</button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    <div class="m-content m-duc">
+      <div class="container-fluid "style="background-color:#f3f3f3;padding-top: 50px;padding-bottom: 50px;"
+      >
+        <div class="container" >
+          <div class="row">
+            <div class="col-md-4">
+              <img src="../images/yueyue/item1.png" alt="" width="330px" height="229px">
+
+            </div>
+            <div class="col-md-4">
+              <img src="../images/yueyue/item2.png" alt="" width="330px" height="229px">
+
+            </div>
+            <div class="col-md-4">
+                <img src="../images/yueyue/item3.png" alt="" width="330px" height="229px">
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="m-content m-tab">
+      <div class="container">
+        <div class="m-tab-header">
+          <div class="m-header-line">
+
+          </div>
+          <div class="m-header-text">
+            产品收益
+
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-md-8 col-sm-12 bar-content">
+            <div class="baohan">
+              <% for (var i = 0; i < 20; i++) {%>
+                <span class="m-b" style="left:<%= i *40 + 5 + "px"%>;height:<%= i *10 + 30 + "px"%>;">
+                  <span class="m-b-number"><%= i *10/100 + 0.5 %></span>
+                  <span class="m-b-title"><%= 2017+i %></span>
+                </span>
+              <% } %>
+
+
+
+            </div>
+
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <span>
+            您投资本产品后，根据存续时间的长短，享有不同的收益率，每0.5个月增长（月为自然月，0.5月以15个自然日计）。投资开始后即以上图所示第一个周期收益率计算收益，存续满
+            0.5个月后，自第2日开始按照第二个周期收益率计算收益。满1个月后按照第三个周期收益率计算收益，以此类推，达到12%%后，其后的收益率将不再递增．
+          　</span>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    <div class="m-content m-lim">
+      <div class="container">
+        <div class="m-tab-header">
+          <div class="m-header-line">
+
+          </div>
+          <div class="m-header-text">
+            产品期限
+
+          </div>
+
+        </div>
+        <div class="m-lim-inc">
+            <ul>
+              <% for (var i = 0; i < 30; i++) {%>
+                <li>
+                  <span></span>
+
+                </li>
+              <% } %>
+
+            </ul>
+
+
+          </div>
+        <div class="m-lim-desc">
+          投资满0.5个月后可预约赎回，之后每0.5月可申请赎回。 上图中蓝色标记为可赎回日（月为自然月，0.5月以15个自然日计）。
+          投资后可提前至少2个自然日预约下次赎回， 预约成功后，在赎回日将自动完成赎回。本产品允许部分赎回，不影响剩余部分资金存续期计算和收益率增长。
+          赎回金额为本金，全额赎回时收益随同投资金额一起回到平台余额；部分赎回时，赎回金额对应比例的收益随同赎回金额一起回到平台余额。
+          敬请注意：同一时间挂起的赎回申请不超过10万元
+        </div>
+      </div>
+    </div>
+    <div class="m-content m-fea">
+     <div class="container">
+       <div class="row">
+         <div class="col-xs-6 col-md-2">
+           <img src="../images/yueyue/1.png" alt="">
+           <h3>锁定期</h3>
+           <p>0.5个月，锁定期内不可预约赎回。</p>
+         </div>
+         <div class="col-xs-6 col-md-2">
+           <img src="../images/yueyue/2.png" alt="">
+           <h3>加入条件</h3>
+           <p>加入金额100起，且以100元的整数倍递增。</p>
+         </div>
+         <div class="col-xs-6 col-md-2">
+           <img src="../images/yueyue/3.png" alt="">
+           <h3>单人购买上限</h3>
+           <p>300000元</p>
+         </div>
+         <div class="col-xs-6 col-md-2">
+           <img src="../images/yueyue/4.png" alt="">
+           <h3>费用</h3>
+           <p>暂不收取</p>
+         </div>
+         <div class="col-xs-6 col-md-2">
+           <img src="../images/yueyue/5.png" alt="">
+           <h3>赎回申请上限</h3>
+           <p>100000元</p>
+         </div>
+
+       </div>
+
+     </div>
+
+    </div>
+
+
+    <script src="../javascripts/jquery.min.js"></script>
+    <!-- <script src="../bootstrap/dist/js/bootstrap.min.js"></script> -->
+  </body>
+</html>

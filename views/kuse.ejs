@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>账户</title>
+    <link rel="stylesheet" href="/stylesheets/css/use.css">
+  </head>
+  <body>
+    <div class="user-right">
+      <div class="container autoheight clearfix">
+        <div class="tt">
+          <div class="user-avatar">
+            <img src="/images/bm.jpg" alt="" id="user-avatar">
+          </div>
+          <div class="user-info">
+            <p>
+              <span class="username">13266911779</span>
+              <span class="quote">
+                <i id="hello">上午好，千家山郭静朝晖，日日江楼坐翠微</i>
+              </span>
+            </p>
+            <p class="status">
+              <span class="level">
+                <img src="/images/vip_1.png" alt="">
+                <span>普通用户</span>
+              </span>
+              <span class="splitLine"></span>
+              <span class="setting">
+                <a href="/user/getLoginInfo" data-toggle="tooltip"data-placement="bottom" titlt data-original-title="您未实名认证">
+                  <i class="icon icon-user"></i>
+                </a>
+                <a href="/user/getLoginInfo" data-toggle="tooltip"data-placement="bottom" titlt data-original-title="您已经绑定手机号">
+                  <i class="icon icon-mobile authed"></i>
+                </a>
+                <a href="/user/getLoginInfo" data-toggle="tooltip"data-placement="bottom" titlt data-original-title="您未设置邮箱">
+                  <i class="icon icon-envelope"></i>
+                  <a href="user/getLoginInfo"><img src="/images/user.png" alt="" class="gr"></a>
+                </a>
+                <a href="/user/getLoginInfo" data-toggle="tooltip"data-placement="bottom" titlt data-original-title="您未设置取现密码">
+                  <i class="icon icon-key"></i>
+                </a>
+                <a href="/user/getLoginInfo" data-toggle="tooltip"data-placement="bottom" titlt data-original-title="您未绑定银行卡">
+                  <i class="icon icon-bank-card"></i>
+                  <a href="user/toMyBankCard"><img src="/images/bank.png" alt=""></a>
+                </a>
+              </span>
+              <span class="splitLine"></span>
+              <span class="safe-level">
+                <a href="user/getLoginInfo">
+                  安全等级:
+                  <i class="i3">中</i>
+                  <span class="progress">
+                    <i class="progress-bar m"></i>
+                  </span>
+                </a>
+              </span>
+              <span class="splitLine"></span>
+              <span class="risk">
+                <a href="/user/vote/getVoteSubjectList/vl">
+                  <i>问</i>
+                  风险偏好
+                  <b id="risk">未知</b>
+                </a>
+              </span>
+            </p>
+          </div>
+          <div class="user-exchange">
+            <a href="/" class="btn btn-white">切换至存管账户</a>
+            <span class="questionTips" data-toggle="tooltip" data-placement="bottom" litle data-original-title="华兴存管系统暂不支持港澳台用户和机构用户的账户开通">?</span>
+          </div>
+        </div>
+      </div>
+      <div class="assets">
+        <li class="first">
+          <a href="/user/toMyDealRecord">
+            <p>资产总计
+              <span class="assets-msg">
+                <i class="fh">?</i>
+                <span class="amUse">资产总计=可用余额+冻结资金+待回款本息+未赎回的月月盈本息
+                  <span class="amu_bot"></span>
+                </span>
+              </span>
+            </p>
+            <p class="red">0.00</p>
+          </a>
+        </li>
+        <li>
+          <a href="/user/toMyDealRecore">
+            <p>可用余额</p>
+            <p>0.00</p>
+          </a>
+        </li>
+        <li>
+          <a href="/user/invest/toMyInvestList">
+            <p>代收本息</p>
+            <p>0.00</p>
+          </a>
+        </li>
+        <li>
+          <a href="/user/invest/toMyIncome">
+            <p>累计收益</p>
+            <p>0.00</p>
+          </a>
+        </li>
+        <li>
+          <a href="/user/invest/toMyIncome">
+            <p>本月收益</p>
+            <p>0.00</p>
+          </a>
+        </li>
+      </div>
+
+      <div class="award">
+        <span>冻结资金:0.00</span>
+        <span>我的红包:800.00</span>
+        <span>未生效红包:800.00</span>
+        <span>生效红包:0.00</span>
+        <input type="hidden" value="800.0" id="unUsed">
+        <span>代金劵:3张</span>
+        <span>提现劵:0张</span>
+      </div>
+
+      <div class="btns">
+        <a href="/lianRecharge/toLianRechargePage" class="btn-main" id="charge">充值</a>
+        <a href="user/invest/getWithdrawInfo" class="btn-warn">提现</a>
+      </div>
+
+      <div class="separate"></div>
+
+      <div class="calendar">
+        <div class="calendar-title">
+          <span>
+            <i class="dot"></i>
+            还款日
+          </span>
+          <span>
+            <i class="dot dot2"></i>
+            回款日
+          </span>
+          <span>
+            <i class="dot dot3"></i>还款日/汇款日
+          </span>
+          <span>
+            <i id="pre-month" class="gray">◀</i>
+            <span id="data">2017年11月</span>
+            <i id="next-month">▶</i>
+          </span>
+        </div>
+        <div class="content">
+          <ul class="week-title">
+            <li>星期日</li>
+            <li>星期一</li>
+            <li>星期二</li>
+            <li>星期三</li>
+            <li>星期四</li>
+            <li>星期五</li>
+            <li>星期六</li>
+          </ul>
+          <div class="month-panel" id="month-panel">
+            <ul class="row-fn">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li>
+                <span data="2017-11-01">1</span>
+              </li>
+              <li><span data="2017-11-02">2</span></li>
+              <li><span data="2017-11-03">3</span></li>
+              <li><span data="2017-11-04">4</span></li>
+            </ul>
+            <ul class="row-fn">
+              <li><span data="2017-11-05">5</span></li>
+              <li><span data="2017-11-06">6</span></li>
+              <li><span data="2017-11-07">7</span></li>
+              <li><span data="2017-11-08">8</span></li>
+              <li><span data="2017-11-09">9</span></li>
+              <li><span data="2017-11-10">10</span></li>
+              <li><span data="2017-11-11">11</span></li>
+            </ul>
+            <ul class="row-fn">
+            <li><span data="2017-11-05">12</span></li>
+            <li><span data="2017-11-06">13</span></li>
+            <li><span data="2017-11-07">14</span></li>
+            <li><span data="2017-11-08">15</span></li>
+            <li><span data="2017-11-09">16</span></li>
+            <li><span data="2017-11-10">17</span></li>
+            <li><span data="2017-11-11">18</span></li>
+          </ul>
+          <ul class="row-fn">
+            <li><span data="2017-11-05">20</span></li>
+            <li><span data="2017-11-06">21</span></li>
+            <li><span data="2017-11-07">22</span></li>
+            <li><span data="2017-11-08">23</span></li>
+            <li><span data="2017-11-09">24</span></li>
+            <li><span data="2017-11-10">25</span></li>
+            <li><span data="2017-11-11">26</span></li>
+          </ul>
+          <ul class="row-fn">
+            <li><span data="2017-11-05">27</span></li>
+            <li><span data="2017-11-06">28</span></li>
+            <li><span data="2017-11-07">29</span></li>
+            <li><span data="2017-11-08">30</span></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  -->

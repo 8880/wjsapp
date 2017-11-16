@@ -1,0 +1,168 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+ul li{
+  list-style: none;
+}
+.container{
+  width:1200px;
+  margin:0 auto;
+  padding:0;
+}
+@media (min-width:1200px)
+.container{
+  width:1170px;
+}
+@media (min-width:992px)
+.container{
+  width:970px;
+}
+@media (min-width:768)
+.container{
+  width:750px;
+}
+.tz1{
+  width:963px;
+  border:1px solid gray;
+  color:#666;
+  margin-top: 40px;
+  padding:30px;
+  box-sizing: border-box;
+  margin-bottom: 100px;
+  margin: 50px auto;
+}
+.tzo{
+  float: right;
+  height:100%;
+  background: #fff;
+  border:1px solid gray;
+  padding:30px;
+  color:#666;
+  width:963px;
+  box-sizing: border-box;
+}
+.tzo h3{
+  font-size: 18px;
+  line-height: 1.8em;
+  border-bottom: 1px solid #e3e3e3;
+  font-weight: normal;
+  margin-top: -15px;
+}
+.col2{
+  display: inline-block;
+  width:49%;
+}
+.large-red{
+  color:#dd3137;
+  font-size: 22px;
+}
+.pies{
+  padding-top: 20px;
+  height:140px;
+}
+.pie{
+  width:160px;
+  height:100%;
+  float: left;
+}
+
+.pies .legend{
+  float: left;
+  height:100%;
+  display: table;
+  margin-left: 30px;
+}
+.pies .legend>div{
+  display: table-cell;
+  vertical-align: middle;
+}
+.pies .legend p{
+  margin-bottom: 10px;
+}
+.pies .legend p span:first-child{
+  margin-right: 10px;
+}
+.pies .legend p span:last-child{
+  margin-left: 20px;
+}
+.pies .legend p span:first-child:before{
+  content: " ";
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    background: #dd3137;
+}
+.pies .legend p span.s2:before{
+  background: #ffbc46;
+}
+.pies .legend p span.s3:before{
+  background: #47beff;
+}
+
+.tzo .separate{
+  content: "";
+  height:20px;
+  background: #f3f3f3;
+  margin:30px -30px;
+}
+.tzo h3.tab{
+  font-size: 16px;
+}
+.tzo h3.tab span.active{
+  border-bottom: 2px solid #dd3137;
+}
+.tzo h3.tab span {
+  padding: 0 10px;
+    line-height: 2em;
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.fr{
+  float: right;
+  color:#64c5fb;
+}
+.sort{
+  padding:20px 0;
+}
+.sort span{
+  border-right: 1px dashed #cdcdcd;
+  padding:0 7px;
+  float: left;
+  height:34px;
+  line-height: 34px;
+}
+.sort span .select.default_width{
+  color:#666;
+  width:100px;
+}
+.input-box{
+  height:34px;
+  line-height: 34px;
+  border:1px solid #e1e2e3;
+  border-radius: 3px;
+  padding:left;
+}
+option{
+  font-weight: normal;
+  display: block;
+  white-space: pre;
+  min-height:1.2em;
+  padding:0px 2px 1px;
+}
+
+
+
+
+
+/**/

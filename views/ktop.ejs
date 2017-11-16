@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>微金所头部</title>
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href='/stylesheets/top.css'>
+
+
+  </head>
+  <body>
+
+    <div class="top">
+      <div class="container1 clearfix">
+        <div class="right">
+          <a href="/deposit" class="in">进入存管专区</a>
+          <a href="/Mary">帮助中心</a>
+          <span class="line">|</span>
+          <span class="users">
+            <a href="/register">注册</a>
+            <a href="/login">登录</a>
+          </span>
+        </div>
+        <div class="left">
+          <span class="top-phone">
+            <i class="icon-telephone"></i>
+            客服电话：4006-89-4006 / 010-53563799/（9:00~21:00)
+          </span>
+          <span class="line">|</span>
+          <span>
+            <a href="#" class="sobot">
+              <i class="icon-service-o"></i>
+              在线客服
+            </a>
+          </span>
+          <span class="line">|</span>
+          <span>
+            <a href="/app" target="_blank">
+              <i class="icon-mobile-2">
+                <div class="y"></div>
+              </i>
+              移动客户端
+            </a>
+            <img src="/images/img/yd.jpg" alt="" class="hide">
+          </span>
+          <span class="line">|</span>
+          <span>
+            <i class="icon-wechat-o">
+              <div class="z"></div>
+            </i>
+            微信公众号二维码
+            <img src="/images/img/wx.jpg" alt="" class="hide" width="130">
+          </span>
+          <span class="line">|</span>
+          <span>
+            <a href="http://cf.weijinsuo.com/" target="_blank">
+              <i class="icon-money-bag"></i>
+              财富登录
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav">
+      <div class="container1 clearfix">
+        <div class="menu">
+          <ul class="xxx">
+            <li><a href="/" class="page">首 页</a></li>
+            <li><a href="/loan" class="loan">我要投资</a></li>
+            <li><a href="/security" class="security">安全保障</a></li>
+            <li><a href="/Mary" class="guide">新手指南</a></li>
+            <li><a href="/news" class="news">新闻公告</a></li>
+            <li><a href="about" class="about">关于我们</a></li>
+
+            <li class="me">
+              <a href="/login">
+                <span class="account"></span>
+                我的帐户
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+
+        <div class="logo">
+          <span class="box"></span>
+          <a href="#" class="point">|</a>
+          <span class="tp">
+            <img src="/images/img/si.png" alt="">
+          </span>
+        </div>
+      </div>
+    </div>
+    <%- include("online") %>
+
+    </script>
+
+    <script src="/javascripts/jquery.min.js" charset="utf-8"></script>
+    <script src="/javascripts/alljs.js"></script>
+    <script type="text/javascript">
+
+    $(function(){
+      $(".icon-mobile-2").hover(function(){
+        $(".y").show();
+      },function(){
+        $(".y").hide();
+      });
+    });
+    $(function(){
+      $(".icon-wechat-o").hover(function(){
+        $(".z").show();
+      },function(){
+        $(".z").hide();
+      });
+    });
+
+
+
+    </script>
+  </body>
+</html>

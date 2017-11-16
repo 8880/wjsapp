@@ -1,0 +1,220 @@
+<%- include("ktop") %>
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title></title>
+
+
+  <link rel="stylesheet" href="/stylesheets/news.css">
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+  <div class="news-bg">
+    <div class="news-box">
+      <div class="news-left">
+        <ul class="tabs">
+          <li class="active kl"><a href="#">全部新闻</a></li>
+          <li><a href="#">媒体报道</a></li>
+          <li><a href="#">微金所头条</a></li>
+          <li><a href="#">行业资讯</a></li>
+          <li><a href="#">更新历史</a></li>
+          <li><a href="#">利率报告</a></li>
+          <li><a href="#">专题列表</a></li>
+        </ul>
+      </div>
+      <div class="news-right">
+        <div>
+          <ul class="show">
+            <!-- 全部新闻  -->
+            <li class="active">
+              <div class="allnewss">
+                <ul id='rate-report' class="allnews">
+                  <% for (var i = 0; i < allnews.length; i++) {%>
+                    <li>
+                      <a href="/news/<%= allnews[i].idx %>" target="_blank"><h4 class="h4" style="color: #000;"><%= allnews[i].title %></h4></a>
+                      <p style="font-size:14px;">
+                        <%= allnews[i].time %>
+                      </p>
+                      <p class="h4" style="color: #6F6F6F; font-size:15px;">&nbsp;&nbsp;
+                        <%= allnews[i].content %>
+                      </p>
+                      <p class="h5"><a href="/news/<%= allnews[i].idx %>" style="color: #c2502e;" target="_blank">Read more →</a></p>
+                    </li>
+                    <% } %>
+                      <div class="ppp">
+                        <div value="1 0"></div>
+                        <div id="page1" class="page_div"></div>
+                      </div>
+                </ul>
+              </div>
+            </li>
+            <!-- 媒体报道 -->
+            <li>
+              <div class="newsmedia">
+                <ul id='rate-report'>
+                  <% for (var i = 0; i < newsmedia.length; i++) {%>
+                    <li>
+                      <a href="#"><h4 class="h4" style="color: #000;"><%= newsmedia[i].title %></h4></a>
+                      <p style="font-size:14px;">
+                        <%= newsmedia[i].time %>
+                      </p>
+                      <p class="h4" style="color: #6F6F6F; font-size:15px;">&nbsp;&nbsp;
+                        <%= newsmedia[i].content %>
+                      </p>
+                      <p class="h5"><a href="#" style="color: #c2502e;">Read more →</a></p>
+                    </li>
+                    <% } %>
+                      <div class="ppp">
+                        <div value="1 0"></div>
+                        <div id="page2" class="page_div"></div>
+                      </div>
+                </ul>
+              </div>
+            </li>
+            <!-- 微金所头条 -->
+            <li>
+              <div class="wjs-news-top">
+                <ul id='rate-report'>
+                  <% for (var i = 0; i < newstop.length; i++) {%>
+                    <li>
+                      <a href="#"><h4 class="h4" style="color: #000;"><%= newstop[i].title %></h4></a>
+                      <p style="font-size:14px;">
+                        <%= newstop[i].time %>
+                      </p>
+                      <p class="h4" style="color: #6F6F6F; font-size:15px;">&nbsp;&nbsp;
+                        <%= newstop[i].content %>
+                      </p>
+                      <p class="h5"><a href="#" style="color: #c2502e;">Read more →</a></p>
+                    </li>
+                    <% } %>
+                      <div class="ppp">
+                        <div value="1 0"></div>
+                        <div id="page3" class="page_div"></div>
+                      </div>
+                </ul>
+              </div>
+            </li>
+            <!-- 行业资讯 -->
+            <li>
+              <div class="newsjob">
+                <ul id='rate-report'>
+                  <% for (var i = 0; i < newsjob.length; i++) {%>
+                    <li>
+                      <a href="#"><h4 class="h4" style="color: #000;"><%= newsjob[i].title %></h4></a>
+                      <p style="font-size:14px;">
+                        <%= newsjob[i].time %>
+                      </p>
+                      <p class="h4" style="color: #6F6F6F; font-size:15px;">&nbsp;&nbsp;
+                        <%= newsjob[i].content %>
+                      </p>
+                      <p class="h5"><a href="#" style="color: #c2502e;">Read more →</a></p>
+                    </li>
+                    <% } %>
+                      <div class="ppp">
+                        <div value="1 0"></div>
+                        <div id="page4" class="page_div"></div>
+                      </div>
+                </ul>
+              </div>
+            </li>
+            <!-- 更新历史 -->
+            <li style="width: 932px;">
+              <div class="history_content">
+                <span class="history_bs"></span>
+                <div class="history_now">现在</div>
+                <div class="history_content_right">
+
+                  <% for (var i = 0; i < historys.length; i++) {%>
+                    <div>
+                      <span class="history_2014"><%= historys[i].years %></span>
+                      <i class="his-tl">▼</i>
+                      <img class="hidden-xs" src="/images/history_rec.jpg" alt="">
+                      <p class="hidden-xs"><%= historys[i].date %></p>
+                      <dl>
+                        <dt><%= historys[i].dates %></dt>
+                        <dd>
+                          平台更新内容：
+                          <br> <%= historys[i].ct1 %>
+                          <br> <%= historys[i].ct2 %>
+                          <br> <%= historys[i].ct3 %>
+                          <br> <%= historys[i].ct4 %>
+                          <br> <%= historys[i].ct5 %>
+                        </dd>
+                      </dl>
+                    </div>
+                    <% } %>
+
+                </div>
+              </div>
+            </li>
+            <!-- 利率报告 -->
+            <li>
+              <div class="report-box">
+                <h4>利率报告</h4>
+                <p class="report-content">
+
+                  微金所为客观、精确地对区域市场的真实利率水平进行反馈，并为推进利率市场化民间借贷阳光化贡献一份力，自2013年11月起实行按月发布《微金所中国民间利率市场化报告》，并与汤森路透合作，通过汤森路透官方网站面向全球发布。《微金所中国民间利率市场化报告》根据微金所平台交易数据、上海征信系统数据等综合统计分析得出，是监管部门制定金融政策、金融机构业务拓展提供有益的参考。后续每月报告均将在微金所平台定期发布，欢迎有需要的人士浏览、下载。
+
+                </p>
+
+                <div class="report-box">
+                  <ul class="report-list">
+                    <% for (var i = 0; i < lvreport.length; i++) {%>
+                      <li>
+                        <a href="#">
+                          <%= lvreport[i].file %>
+                        </a>
+                      </li>
+                      <% } %>
+                  </ul>
+                </div>
+
+                <div class="ppp">
+                  <div value="1 0"></div>
+                  <div id="page" class="page_div"></div>
+                </div>
+              </div>
+            </li>
+            <!-- 专题列表 -->
+            <li>
+              <ul id='rate-report'>
+                <li>
+                  <% for (var i = 0; i < ratereport.length; i++) {%>
+                    <a href="#"><h4 class="h4" style="color: #000;"><%= ratereport[i].title %></h4></a>
+                    <p style="font-size:14px;">
+                      <%= ratereport[i].time %>
+                    </p>
+                    <p class="h4" style="color: #6F6F6F; font-size:15px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <%= ratereport[i].content %>
+                    </p>
+                    <p class="h5"><a href="#" style="color: #c2502e;">Read more →</a></p>
+                    <% } %>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="/javascripts/jquery.min.js"></script>
+  <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/javascripts/paging.js"></script>
+  <script src="/javascripts/news.js"></script>
+</body>
+
+</html>
+<%- include("kbottom") %>

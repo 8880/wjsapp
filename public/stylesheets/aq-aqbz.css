@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  /*font-size: 14px;*/
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+.clearfix {
+  clear: both;
+  overflow: hidden; }
+
+.aq-safe-ad {
+  width: 100%; }
+
+.aq-safebox {
+  padding: 20px 0;
+  width: 100%; }
+  .aq-safebox div {
+    width: 1200px;
+    padding: 30px 0;
+    margin: 0 auto; }
+    .aq-safebox div dl {
+      width: 75%; }
+      .aq-safebox div dl dt {
+        padding-bottom: 15px; }
+        .aq-safebox div dl dt i {
+          width: 20px;
+          height: 20px;
+          background-color: #349fe7;
+          border-radius: 50%;
+          font-size: 12px;
+          font-weight: 700;
+          color: white;
+          line-height: 20px;
+          text-align: center;
+          display: inline-block;
+          vertical-align: top;
+          position: relative;
+          top: 3px; }
+        .aq-safebox div dl dt span {
+          font-size: 18px;
+          color: #349fe7;
+          font-weight: 700; }
+        .aq-safebox div dl dt b {
+          font-size: 16px;
+          color: #333; }
+      .aq-safebox div dl dd {
+        line-height: 28px;
+        color: #666; }
+        .aq-safebox div dl dd b {
+          font-weight: 700; }
+        .aq-safebox div dl dd span {
+          color: #f34f54; }
+  .aq-safebox .safe-pad15 {
+    padding: 15px 0; }
+    .aq-safebox .safe-pad15 .safe-dl-inl {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background: blue;
+      float: left; }
+    .aq-safebox .safe-pad15 img {
+      float: left;
+      padding-right: 30px; }
+    .aq-safebox .safe-pad15 dl {
+      float: left;
+      margin-top: 60px; }
+  .aq-safebox .safe-box-bg1 {
+    background: url("/images/aqbz/aq-aqbz-bg2.png") no-repeat center right; }
+  .aq-safebox .safe-box-bg2 {
+    background: url("/images/aqbz/aq-aqbz-bg4.png") no-repeat center right;
+    background-size: 20%; }
+  .aq-safebox .safe-box-bg3 {
+    background: url("/images/aqbz/aq-aqbz-bg6.png") no-repeat center right;
+    background-size: 20%;
+    height: 240px; }
+  .aq-safebox .safe-box-bg4 {
+    background: url("/images/aqbz/aq-aqbz-bg8.png") no-repeat center right;
+    height: 240px;
+    background-size: 20%; }
+
+.safe-box-2 {
+  background: #fafafa; }
+
+.aq-zclist dl dt {
+  color: #f34f54;
+  text-align: center;
+  font-size: 20px;
+  border-bottom: 1px #d3d3d3 solid;
+  width: 350px;
+  margin: 0 auto;
+  height: 24px;
+  line-height: 24px;
+  font-weight: 700; }
+.aq-zclist dl dd {
+  padding-top: 5px;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  line-height: 30px; }
+  .aq-zclist dl dd div.detail {
+    font-size: 16px;
+    padding: 15px 0 0 0;
+    color: #333;
+    font-weight: 700;
+    text-align: left; }
+  .aq-zclist dl dd div.details {
+    font-size: 14px;
+    line-height: 30px;
+    color: #666;
+    text-align: left;
+    padding: 0; }
+
+.aq-safe-ptbox {
+  width: 1200px;
+  margin: 0 auto; }
+  .aq-safe-ptbox .safe-ptbox {
+    width: 400px;
+    float: left;
+    margin-bottom: 30px; }
+    .aq-safe-ptbox .safe-ptbox div {
+      width: 310px;
+      border: 1px #e2e2e2 dashed;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0 20px 20px 20px; }
+      .aq-safe-ptbox .safe-ptbox div img {
+        margin: 15px auto;
+        margin-bottom: 0px; }
+      .aq-safe-ptbox .safe-ptbox div i {
+        color: #333;
+        font-size: 15px;
+        padding-bottom: 15px;
+        font-weight: 700; }
+      .aq-safe-ptbox .safe-ptbox div span {
+        color: #666;
+        font-size: 14px;
+        line-height: 30px;
+        text-align: left; }
+
+.aq-safe-wj {
+  background: #fafafa;
+  padding-bottom: 20px; }
+  .aq-safe-wj .aq-safe-wjbox {
+    width: 1200px;
+    margin: 0 auto; }
+    .aq-safe-wj .aq-safe-wjbox div.pingji {
+      width: 450px;
+      height: 29px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      padding: 0;
+      text-align: center;
+      color: #f35f54;
+      border-bottom: 1px solid #d3d3d3; }
+      .aq-safe-wj .aq-safe-wjbox div.pingji span {
+        font-size: 20px;
+        font-weight: 700;
+        padding: 0 15px;
+        background: #fafafa;
+        position: relative;
+        top: 15px; }
+    .aq-safe-wj .aq-safe-wjbox p {
+      color: #666;
+      font-size: 14px;
+      line-height: 30px; }
+
+/*# sourceMappingURL=aq-aqbz.css.map */

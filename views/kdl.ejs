@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>登录</title>
+    <link rel="stylesheet" href='/stylesheets/kdl.css'>
+  </head>
+  <body>
+    <div class="top">
+      <div class="container clearfix">
+        <div class="left">
+          <div class="wjs">
+            <span class="box"></span>
+            <a href="#" class="point"></a>
+            <span class="tp">
+              <img src="./images/img/si.png" alt="">
+            </span>
+          </div>
+        </div>
+
+        <div class="right">
+          <ul>
+            <li> <a href="/" class="on">返回首页</a> </li>
+            <li style="  border-bottom: 3px red solid;"> <a href="/login" style="color: red;">登录</a></li>
+            <li> <a href="/register" style="color: blue">注册</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="DL">
+      <div class="container clearfix">
+        <div class="left">
+          <a href="https://www.weijinsuo.com/" class="logo"></a>
+        </div>
+        <div class="right">
+          <div class="dl">
+            <h4 style="font-weight: 100">登录微金所</h4>
+            <div class="tz"></div>
+            <input id="um" type="text" placeholder="请输入您的账号" class="phone"><br>
+            <input id="pw" type="password" placeholder="密码" class="pawd" id="pwd"><br>
+            <div class="jz">
+              <div class="jz-left">
+                <input type="radio" class="radio">
+                <span style="color: #777; font-size:13px" >记住用户名</span>
+              </div>
+              <div class="jz-right">
+                <a href="https://www.weijinsuo.com/user/forget-password" class="wj">忘记密码?</a>
+              </div>
+            </div>
+            <input type="button" id="btn" class="btn" value="登录">
+            <span class="mei">还没有账号?</span><a href="/register" style="font-size: 13px; color: #fe9305; ">立即创建</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      ©版权所有©深圳微金所金融信息服务有限公司 粤ICP备 16000732号-1
+    </div>
+
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/login.js"></script>
+    <script type="text/javascript">
+
+      $("#pwd").focusin(function(){
+        $(".tz").addClass("pswd")
+      }).focusout(function(){
+        $(".tz").removeClass("pswd")
+      })
+    </script>
+  </body>
+</html>

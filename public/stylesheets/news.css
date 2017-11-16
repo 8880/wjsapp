@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+.clearfix::before, .clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.news-bg {
+  background: #f3f3f3;
+  padding: 15px 0;
+}
+
+.news-box {
+  background: #f3f3f3;
+  border: 1px #e3e3e3 solid;
+  width: 1200px;
+  margin: 0 auto;
+  /*height: 1000px;*/
+}
+
+.news-box .news-left {
+  float: left;
+  width: 18%;
+}
+
+.news-box .news-left li {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  color: #333;
+  border: 1px #e3e3e3 solid;
+  text-align: center;
+  background: #f8f8f8;
+  border-left: none;
+  border-top: none;
+}
+
+.news-box .news-left li a {
+  color: #414141;
+  text-decoration: none;
+}
+
+.news-box .news-left li {
+  box-sizing: border-box;
+  border-left: 3px solid #f8f8f8;
+  cursor: pointer;
+}
+
+.news-box .news-left li:hover {
+  background-color: #fff;
+  border-left: 3px solid #dd2c37;
+  box-sizing: border-box;
+}
+
+.news-box .news-right {
+  background: #fff;
+  display: table;
+  padding: 25px;
+  font-size: 14px;
+  height: 100%;
+}
+
+.show li {
+  display: none;
+}
+
+.show li.active {
+  display: block;
+}
+
+.report-box h4 {
+  font-size: 18px;
+  color: #222;
+  padding-bottom: 25px;
+  font-weight: 400;
+}
+
+.report-box .report-content {
+  color: #666;
+  line-height: 28px;
+  text-indent: 30px;
+  margin-bottom: 30px;
+}
+
+.report-box .report-list li {
+  display: block;
+  color: #444;
+  height: 40px;
+  line-height: 40px;
+  padding: 12px 50px 50px;
+  background: url(/images/rate.jpg) no-repeat 6px 13px;
+  border-bottom: 1px solid #c6cbcf;
+}
+
+.report-box .report-list li a {
+  color: #414141;
+}
+
+.page_div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-family: "microsoft yahei";
+  color: #666666;
+  margin-right: 10px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+
+/*
+   * 页数按钮样式
+   */
+
+.page_div a {
+  min-width: 30px;
+  height: 28px;
+  text-align: center;
+  margin: 4px 12px;
+  cursor: pointer;
+  line-height: 28px;
+  color: #666666;
+  font-size: 15px;
+  display: inline-block;
+}
+
+.page_div a:hover {
+  border-radius: 5px;
+  color: #475b66;
+  background-color: #eee;
+}
+
+#firstPage, #lastPage {
+  width: 50px;
+  color: #0073A9;
+  border: 1px solid #0073A9!important;
+}
+
+#prePage, #nextPage {
+  width: 70px;
+  color: #0073A9;
+  /*border: 1px solid #0073A9!important;*/
+}
+
+.page_div .current {
+  background-color: #475b66;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.totalPages {
+  margin: 0 10px;
+}
+
+.totalPages span, .totalSize span {
+  color: #0073A9;
+  margin: 0 5px;
+}
+
+.news-right .show li.newshide {
+  display: none;
+}
+
+.news-right .show li.newsshow {
+  display: block;
+}
+
+.ppp {
+  margin-left: 113px;
+}
+
+#rate-report a .h4 {
+  font-size: 18px;
+  font-weight: normal;
+  padding: 5px 0;
+  line-height: 28px;
+}
+
+.h4, .h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+ul#rate-report li {
+  display: block;
+}
+
+#rate-report .h4 {
+  line-height: 28px;
+  font-weight: normal;
+}
+
+.news-right .show li.newshide {
+  display: none!important;
+}
+
+.news-right .show li.newsshow {
+  display: block!important;
+}
+
+.history_content {
+  right: inherit;
+  left: inherit;
+  top: 12px;
+  border-left: 6px #e6eaed solid;
+  position: relative;
+  left: 90px;
+  padding-bottom: 1px;
+}
+
+.history_bs {
+  width: 6px;
+  position: absolute;
+  left: -6px;
+  top: 0px;
+  height: 70px;
+  border-radius: 5px;
+  background: #ffa412;
+}
+
+.history_now {
+  position: absolute;
+  top: 25px;
+  font-size: 16px;
+  left: -8%;
+}
+
+.history_content .history_content_right {
+  margin-left: inherit;
+  top: inherit;
+  padding: 15px 0 0 50px;
+  border-left: 5px #e6eaed solid;
+  margin-left: 27%;
+  position: relative;
+  top: 30px;
+}
+
+.history_content_right div span {
+  left: -260px;
+  top: 0;
+}
+
+.history_2014 {
+  position: absolute;
+  font-size: 18px;
+}
+
+.history_content_right div .his-tl {
+  position: absolute;
+  top: -18px;
+  left: 7px;
+  color: #e6e9ee;
+  font-size: 40px;
+  transform: rotate(118deg);
+}
+
+.history_content_right div img {
+  position: absolute;
+  left: -11px;
+  top: 0px;
+}
+
+.history_content_right div img {
+  left: -10%;
+  top: -15px;
+}
+
+.history_content_right div p {
+  left: -25%;
+  top: 0;
+}
+
+.history_content_right div p {
+  position: absolute;
+  left: -142px;
+  top: 20px;
+  padding: 6px 3px;
+  background: #7cd1fa;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.history_content_right div dl {
+  max-width: 368px;
+  left: -20px;
+  position: relative;
+  background: #e6e9ee;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.history_content_right div dl dt {
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-size: 18px;
+  text-indent: 3px;
+}
+
+.history_content_right div dl dd {
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.history_content_right div {
+  position: relative;
+  padding-left: 50px;
+}
+
+.kl {
+  border-left: 3px #dd2c37 solid!important;
+  background-color: #fff!important;
+}
+
+.news {
+  border-bottom: 3px #dd3137 solid;
+}

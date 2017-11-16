@@ -1,0 +1,24 @@
+<%- include("ktop") %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>微金所-成就亿万人的信用价值</title>
+    <link rel="stylesheet" href="/stylesheets/article.css">
+  </head>
+  <body>
+
+    <div class="news-bg">
+      <div class="news-detail">
+        <h2><%= article[0].title %></h2>
+        <span><%= article[0].time %></span>
+          <div class="news-dcont">
+            <%= article[0].content %>
+          </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>
+<%- include("kbottom") %>

@@ -1,0 +1,463 @@
+*{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+}
+
+ul li{
+  list-style: none;
+}
+.container{
+  width:1200px;
+  margin:0 auto;
+  padding:0;
+}
+@media (min-width:1200px)
+.container{
+  width:1170px;
+}
+@media (min-width:992px)
+.container{
+  width:970px;
+}
+@media (min-width:768)
+.container{
+  width:750px;
+}
+.bottom{
+  height:430px;
+  width:100%;
+  background: #333333;
+  /*margin-top: 10px;*/
+}
+.neirong{
+  height:430px;
+}
+.bottom-top{
+  height:285px;
+  background: #333333;
+  color:#fff;
+  border-bottom:1px dashed #fff;
+}
+.top-left{
+  width:240px;
+  height:280px;
+  float: left;
+}
+.top-left .wei{
+  width:120px;
+  height:30px;
+  background: url("../img/bottom-logo.png") center no-repeat;
+  display: block;
+  vertical-align: middle;
+  line-height: 1em;
+  margin-top: 15px;
+}
+.top-left .number{
+  border: 1px #fff solid;
+  color: #fff;
+  margin-top: 13px;
+  font-size: 25px;
+  letter-spacing: 2px;
+  padding: 4px 6px;
+  text-align: center;
+}
+.top-left .customer .icon-service-o{
+  width:120px;
+  height:30px;
+  background: url("../img/kefu.png") center no-repeat;
+  display: block;
+  vertical-align: middle;
+  line-height: 1em;
+  margin-top: 10px;
+  margin-left: -40px;
+  display: inline-block;
+}
+.top-left .customer p{
+  margin-left: -45px;
+  margin-top: -25px;
+  color:#fff;
+  display: inline-block;
+}
+.top-left h5{
+  margin-top: 20px;
+}
+.top-left .weixin{
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  top: 2px;
+  width:18px;
+  height:18px;
+  background: url("../img/weixin.png") center no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+}
+.top-left .weibo{
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  top: 2px;
+  width:18px;
+  height:18px;
+  background: url("../img/xl.jpg") center no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+}
+.top-left .gswj{
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  top: -70px;
+  width:50px;
+  height:50px;
+  background: url("../img/gswj.png") center no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+  left:145px;
+}
+.top-right{
+  width:800px;
+  height:280px;
+  float: right;
+}
+.top-right ul{
+  color:#fff;
+  margin-top: 40px;
+  font-size: 20px;
+  float: left;
+  margin-left: 50px;
+}
+.top-right ul li a{
+  color:#fff;
+  font-size: 15px;
+  line-height: 35px;
+  margin-top: 10px;
+}
+.top-right .zg{
+  position: relative;
+  float: left;
+  margin-left: 50px;
+}
+.top-right .zg .yinlian{
+  font-size: 16px;
+  color: #fff;
+  position: absolute;
+  top: 25px;
+  width:71px;
+  height:71px;
+  background: url("../img/yl.png") center no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+}
+.top-right .zg .jr{
+  font-size: 16px;
+  color: #fff;
+  position: absolute;
+  top: 100px;
+  width:71px;
+  height:71px;
+  background: url("../img/jr.png") center no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+}
+.top-right .zg .gd{
+  font-size: 16px;
+  color: #fff;
+  position: absolute;
+  top: 25px;
+  width:71px;
+  height:71px;
+  background: url("../img/gd.png") center no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+  left:80px;
+}
+.top-right .zg .bd{
+  font-size: 16px;
+  color: #fff;
+  position: absolute;
+  top: 100px;
+  width:71px;
+  height:71px;
+  background: url("../img/bd.png") center no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+  left:80px;
+}
+.top-right .zg .ys{
+  font-size: 16px;
+  color: #fff;
+  position: absolute;
+  top: 25px;
+  width:71px;
+  height:71px;
+  background: url("../img/ys.png") center no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+  left:160px;
+}
+.top-right .zg .zx{
+  font-size: 16px;
+  color: #fff;
+  position: absolute;
+  top: 100px;
+  width:71px;
+  height:71px;
+  background: url("../img/zx.png") center no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+  left:160px;
+}
+.top-right .zg .tsl{
+  font-size: 16px;
+  color: #fff;
+  position: absolute;
+  top:25px;
+  width:71px;
+  height:71px;
+  background: url("../img/tsl.png") center no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+  left:240px;
+}
+.top-right .zg .ss{
+  font-size: 16px;
+  color: #fff;
+  position: absolute;
+  top: 100px;
+  width:71px;
+  height:71px;
+  background: url("../img/360.png") center no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+  left:240px;
+}
+.bottom2{
+  height:140px;
+  background: #333333;
+  color:#fff;
+}
+.bottom2-nav{
+  width:420px;
+  height:50px;
+  line-height: 50px;
+  float: left;
+
+}
+.bottom2-nav li{
+  float: left;
+  padding-left: 15px;
+}
+.bottom2-nav li a{
+  color:#fff;
+}
+.bottom2 p{
+  width:490px;
+  height:50px;
+  line-height: 50px;
+  margin-left: 440px;
+}
+
+.bottom2 .anquan{
+  color: #fff;
+  position: relative;
+  top: 8px;
+  width:18px;
+  height:18px;
+  margin-left: 930px;
+  margin-top: -90px;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+}
+.bottom2 a h5{
+  margin-top: -55px;
+  margin-left: 955px;
+  color:#FFF;
+}
+
+.bottom2-2 .dibian{
+  width:100%;
+  height:60px;
+  position: relative;
+  float: left;
+}
+.bottom2-2 .dibian .gjrz{
+  font-size: 16px;
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  width:127px;
+  height:56px;
+  background: url("../img/gjzy.png") center no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+}
+.bottom2-2 .dibian .hyyz{
+  font-size: 16px;
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  left:150px;
+  width:127px;
+  height:56px;
+  background: url("../img/hyyz.png") center no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+}
+.bottom2-2 .dibian .jrrz{
+  font-size: 16px;
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  left:300px;
+  width:127px;
+  height:56px;
+  background: url("../img/jrrz.png") center no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+}
+.bottom2-2 .dibian .aqjc{
+  font-size: 16px;
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  left:455px;
+  width:127px;
+  height:56px;
+  background: url("../img/aqjc.png") center no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+}
+
+.bottom2-2 .dibian .wlsh{
+  font-size: 16px;
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  left:610px;
+  width:127px;
+  height:56px;
+  background: url("../img/wlsh.png") center no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+}
+.bottom2-2 .dibian .net{
+  font-size: 16px;
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  left:750px;
+  width:127px;
+  height:56px;
+  background: url("../img/net.png") center no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+}
+.bottom2-2 .dibian .kxwz{
+  font-size: 16px;
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  left:895px;
+  width:127px;
+  height:56px;
+  background: url("../img/kxwz.png") center no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+}
+.bottom2-2 .dibian .hlw{
+  font-size: 16px;
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  left:1040px;
+  width:127px;
+  height:56px;
+  background: url("../img/hlw.png") center no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+}
+
+.aa{
+  width:1000px;
+  height:800px;
+  background: red;
+  border:1px solid red;
+}
+
+.rocket{
+ position: fixed;
+ right: 3px;
+ bottom: 0;
+ width:43px;
+ height:43px;
+ background: url("../img/rocket.png") center no-repeat;
+ display: inline-block;
+ vertical-align: middle;
+ background-size: contain;
+ display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/

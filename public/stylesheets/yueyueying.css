@@ -1,0 +1,193 @@
+
+
+.m-bar{
+    background: url(../images/yueyue/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffe149;
+    height: 280px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+
+.m-bar-title .title {
+    font-size: 34px;
+    font-weight: 800
+  }
+.m-bar-title .adventure {
+    display: inline-block;
+    width: 89px;
+    height: 60px;
+    position: absolute;
+    background-color: #ffa722;
+    padding: 5px 0;
+    font-size: 0px;
+    top: 20px;
+    color: white;
+    left: 50%;
+    margin-left: 196px
+  }
+  .m-bar-title .main-c{
+    width: 99px;
+    height: 70px;
+    border: 1px solid #fff;
+    position: absolute;
+    top:-5px;
+    left:-5px;
+  }
+  .m-bar-income {
+    position: absolute;
+    left: 25%;
+    top:25%;
+    /*background: red;*/
+    text-align: center;
+    width: 200px;
+    height: 100px;
+}
+ .num {
+    font-size: 30px;
+    font-weight: 600;
+    color: red;
+  }
+ .per {
+      font-size: 16px;
+      color: red;
+  }
+  .m-bar-income .info {
+      font-size: 12px;
+      color: #666;
+    }
+  .m-bar-people{
+
+    position: absolute;
+    left:40%;
+    top:55%;
+    /* background: red; */
+    text-align: center;
+    width: 200px;
+  }
+  .m-bar-star .star-gray{
+    width: 95px;
+    height: 14px;
+    background: url(../images/yueyue/star-gray.png);
+    background-position: 0px 0px ;
+    position: absolute;
+    top:47%;
+    left:55%;
+  }
+  .m-bar-star .star-active{
+    height: 14px;
+    width: 50px;
+    background: url(../images/yueyue/star-active.png);
+    background-position: 0px 0px;
+  }
+  .m-bar-iner{
+    position: absolute;
+    left: 63%;
+    top:35%;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+  }
+  .m-pro{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 200px
+  }
+  .m-pro button{
+    width: 320px;
+    height: 34px;
+    background-color: #dd3137;
+    border: none;
+    border: 1px solid #dd3137;
+    border-radius: 5px ;
+  }
+.m-duc{
+  min-height: 200px;
+}
+.m-tab,.m-lim,.m-fea{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.m-tab-header{
+    position: relative;
+    z-index: 10;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.m-header-line{
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+  margin: 0 auto;
+}
+.m-header-text{
+  position: absolute;
+  top:-10px;
+  left:50%;
+  background-color: #fff;
+}
+.m-tab .bar-content{
+  height: 300px;
+  overflow: auto;
+}
+.bar-content .baohan{
+  width:1600px;
+  height: 300px;
+}
+.bar-content .baohan .m-b{
+  background-color: #ffcc00;
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  position: absolute;
+  bottom:25px;
+  left:0;
+}
+.m-b-number{
+  position: absolute;
+  left: -10px;
+  text-align: center;
+  width: 45px;
+  top: -25px;
+  font-size: 12px;
+}
+.m-b-title {
+    position: absolute;
+    left: -20px;
+    text-align: center;
+    width: 65px;
+    bottom: -25px;
+    font-size: 12px
+  }
+.m-lim{
+  background-color: #f3f3f3;
+}
+.m-lim-inc{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 100px;
+  overflow-x:scroll;
+  border: 1px solid green;
+}
+.m-lim-inc ul{
+  height: 20px;
+  width: 1600px;
+}
+
+
+.m-lim-inc li{
+ float: left;
+ list-style: none;
+ width: 20px;
+ height: 20px;
+ background-color: #fff;
+ border: 2px solid #75c7cd;
+ border-radius: 50%;
+ margin-left: 20px;
+ margin-top: 35px;
+}
+.m-fea{
+  text-align: center;
+}

@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  /*font-size: 14px;*/
+  box-sizing: border-box; }
+
+.aq-app-container {
+  width: 1200px;
+  margin: 0 auto; }
+
+.aq-app-box1 {
+  background: #008bd5;
+  overflow: hidden; }
+  .aq-app-box1 .box1-logo {
+    width: 100%;
+    float: left; }
+    .aq-app-box1 .box1-logo img {
+      margin-top: 30px; }
+  .aq-app-box1 .aq-box1-bg {
+    background: url("/images/app/aq-app-bg.png") no-repeat;
+    float: left;
+    overflow: hidden; }
+    .aq-app-box1 .aq-box1-bg .box1-left {
+      width: 50%;
+      float: left;
+      overflow: hidden; }
+      .aq-app-box1 .aq-box1-bg .box1-left img {
+        width: 100%;
+        float: left; }
+      .aq-app-box1 .aq-box1-bg .box1-left .android {
+        width: 50%;
+        float: left;
+        text-align: center; }
+        .aq-app-box1 .aq-box1-bg .box1-left .android h3 {
+          color: white;
+          font-size: 28px;
+          font-weight: normal;
+          margin-top: -14px;
+          line-height: 38px;
+          text-align: left; }
+        .aq-app-box1 .aq-box1-bg .box1-left .android h4 {
+          color: white;
+          font-size: 24px;
+          font-weight: normal;
+          line-height: 38px;
+          margin: -8px 0 45px 0;
+          text-align: left; }
+        .aq-app-box1 .aq-box1-bg .box1-left .android ul {
+          margin-left: 32px; }
+          .aq-app-box1 .aq-box1-bg .box1-left .android ul li {
+            color: white;
+            line-height: 28px;
+            text-align: left; }
+        .aq-app-box1 .aq-box1-bg .box1-left .android a {
+          margin: 0 auto;
+          display: inline-block; }
+          .aq-app-box1 .aq-box1-bg .box1-left .android a img {
+            padding-top: 60px; }
+      .aq-app-box1 .aq-box1-bg .box1-left .ios {
+        width: 50%;
+        float: left;
+        text-align: center; }
+        .aq-app-box1 .aq-box1-bg .box1-left .ios img {
+          width: 170px;
+          float: none; }
+        .aq-app-box1 .aq-box1-bg .box1-left .ios p {
+          font-size: 15px;
+          color: #fff;
+          line-height: 25px;
+          padding-top: 5%; }
+        .aq-app-box1 .aq-box1-bg .box1-left .ios a > img {
+          margin-top: 60px;
+          max-width: 210px;
+          width: 100%; }
+    .aq-app-box1 .aq-box1-bg .box1-right {
+      width: 50%;
+      float: left; }
+      .aq-app-box1 .aq-box1-bg .box1-right img {
+        max-width: 480px;
+        width: 120%;
+        padding: 25% 0 15% 8%; }
+
+.aq-app-box2 {
+  background-color: #0084b8;
+  padding: 10px 0 25px 0; }
+  .aq-app-box2 .aq-app-container {
+    overflow: hidden; }
+    .aq-app-box2 .aq-app-container .box2-col {
+      width: 25%;
+      padding: 0 15px;
+      text-align: center;
+      float: left; }
+      .aq-app-box2 .aq-app-container .box2-col img {
+        padding: 30px 0 20px 0; }
+      .aq-app-box2 .aq-app-container .box2-col h2 {
+        font-size: 26px;
+        color: #fff;
+        letter-spacing: 1px;
+        font-weight: normal;
+        padding-bottom: 8px; }
+      .aq-app-box2 .aq-app-container .box2-col p {
+        font-size: 13px;
+        color: #fff;
+        line-height: 25px;
+        letter-spacing: 1px;
+        text-align: left; }
+
+.aq-app-box3 {
+  padding: 40px 0 10px; }
+  .aq-app-box3 .aq-app-container {
+    overflow: hidden; }
+    .aq-app-box3 .aq-app-container .box3-left {
+      margin-left: 100px;
+      width: 500px;
+      float: left; }
+      .aq-app-box3 .aq-app-container .box3-left h1 {
+        color: #333333;
+        padding: 25px 0 15px 0;
+        font-weight: bold;
+        font-size: 36px;
+        text-align: center; }
+      .aq-app-box3 .aq-app-container .box3-left p {
+        font-size: 17px;
+        color: #333333;
+        line-height: 30px;
+        letter-spacing: 1px;
+        text-align: left; }
+    .aq-app-box3 .aq-app-container .box3-right {
+      width: 500px;
+      float: left; }
+      .aq-app-box3 .aq-app-container .box3-right img {
+        margin: 15px 0 0 75px; }
+
+.aq-app-box4 {
+  background: #eee;
+  padding: 20px 0;
+  overflow: hidden; }
+  .aq-app-box4 .box4-left {
+    width: 400px;
+    padding: 130px 15px 0;
+    float: left; }
+    .aq-app-box4 .box4-left h2 {
+      color: #333;
+      padding-bottom: 15px;
+      text-align: left;
+      font-weight: bold;
+      font-size: 30px; }
+    .aq-app-box4 .box4-left p {
+      color: #333;
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: 1px;
+      text-align: left; }
+  .aq-app-box4 .box4-mid {
+    width: 320px;
+    float: left; }
+    .aq-app-box4 .box4-mid img {
+      padding-left: 50px; }
+
+.aq-app-box5 .aq-app-container {
+  padding: 35px 0; }
+  .aq-app-box5 .aq-app-container h2 {
+    color: #333;
+    font-weight: bold;
+    padding-bottom: 35px;
+    text-align: center;
+    font-size: 30px; }
+  .aq-app-box5 .aq-app-container ul {
+    margin-left: 100px; }
+    .aq-app-box5 .aq-app-container ul li {
+      list-style: none;
+      color: #333;
+      font-size: 17px;
+      line-height: 30px;
+      letter-spacing: 1px;
+      text-align: left; }
+      .aq-app-box5 .aq-app-container ul li b {
+        font-size: 17px; }
+
+.aq-app-box6 .aq-app-container {
+  width: 1000px;
+  overflow: hidden; }
+  .aq-app-box6 .aq-app-container img {
+    float: left;
+    margin-right: 26px; }
+  .aq-app-box6 .aq-app-container img:nth-child(4) {
+    margin-right: 0px; }
+
+/*# sourceMappingURL=aq-app.css.map */

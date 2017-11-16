@@ -1,0 +1,170 @@
+*{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+}
+
+ul li{
+  list-style: none;
+}
+.container{
+  width:1200px;
+  margin:0 auto;
+  padding:0;
+}
+@media (min-width:1200px)
+.container{
+  width:1170px;
+}
+@media (min-width:992px)
+.container{
+  width:970px;
+}
+@media (min-width:768)
+.container{
+  width:750px;
+}
+body{
+  background: lightblue;
+}
+
+.top{
+  width:100%;
+  height:80px;
+  border:1px solid gray;
+  background: #fff;
+  z-index: 2;
+}
+.top .left{
+  float: left;
+  width:500px;
+  height:70px;
+  margin:5px;
+}
+.wjs .box {
+  width: 165px;
+    height: 48px;
+    background: url(../img/logo.png) center no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -70px;
+}
+.top .right{
+  float: right;
+  width:400px;
+  height:70px;
+  line-height: 70px;
+}
+.right ul li{
+  float: left;
+  margin-left: 50px;
+  font-size: 25px;
+}
+
+
+
+.ZC .left{
+  width:450px;
+  height:510px;
+  border:1px solid gray;
+  float: left;
+  margin-top:40px;
+  background: #fff;
+}
+.zc{
+  width: 340px;
+    height: 460px;
+    margin:25px auto;
+    position: relative;
+    border: 1px solid gray;
+}
+h4{
+  position: absolute;
+  left:110px;
+  font-size: 20px;
+}
+.phone{
+  width:300px;
+  height:30px;
+  margin-top: 35px;
+  margin-left:10px;
+  text-align: center;
+}
+.pawd,.pass,.imgs{
+  width:300px;
+  height:30px;
+  margin-top:20px;
+  margin-left:10px;
+  text-align: center;
+}
+.code{
+  width:200px;
+  height:30px;
+  margin-top:20px;
+  margin-left:10px;
+  text-align: center;
+}
+.yzm{
+  width:100px;
+  height:30px;
+  background: url("../img/yzm.jpg") center no-repeat;
+  vertical-align: middle;
+  line-height: 1em;
+  margin-top: -55px;
+  margin-left: 220px;
+  display: inline-block;
+  background-size: contain;
+}
+.bt{
+  width: 100px;
+    height: 35px;
+    background: red;
+    color: #fff;
+    text-align: center;
+    margin-top: -35px;
+    margin-left: 215px;
+    z-index: 2;
+}
+p{
+  margin-left: 10px;
+  display: inline-block;
+}
+.radio,h5{
+  display: inline-block;
+}
+#btn{
+  width: 300px;
+  height: 38px;
+  color: #fff;
+  background-color: #dd3137;
+  font-size: 14px;
+  margin: 20px 15px;
+  }
+
+  .ZC .right{
+    width:720px;
+    height:380px;
+    border:1px solid gray;
+    margin-top:130px;
+    background: #fff;
+    float: right;
+  }
+  .logo{
+    width:100%;
+    height:100%;
+    background: url("../img/gudong.jpg") center no-repeat;
+    vertical-align: middle;
+    line-height: 1em;
+    display: inline-block;
+    background-size: contain;
+  }
+
+  .bottom{
+    position: fixed;
+    bottom:0px;
+    width:100%;
+    height:100px;
+    background: #fffff0;
+    text-align: center;
+    line-height: 100px;
+  }

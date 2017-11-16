@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+  /*font-size: 14px;*/
+ }
+
+ul li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.aq-center {
+  width: 1200px;
+  margin: 0 auto; }
+
+h3 {
+  font-size: 24px; }
+
+img.aq-cg-ad {
+  width: 100%; }
+
+.aq-qa {
+  overflow: hidden;
+  padding: 40px 0 30px 0;
+  border-bottom: 1px solid #efefef; }
+  .aq-qa .left-col {
+    width: 500px;
+    float: left; }
+    .aq-qa .left-col .qa-par img {
+      vertical-align: middle; }
+    .aq-qa .left-col .qa-par h3 {
+      display: inline-block;
+      vertical-align: middle;
+      font-weight: normal; }
+    .aq-qa .left-col .qa-par p {
+      font-size: 15px;
+      line-height: 28px;
+      margin: 10px 0; }
+  .aq-qa .right-col {
+    width: 630px;
+    padding-left: 70px;
+    float: left; }
+    .aq-qa .right-col .per span {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 5px;
+      display: inline-block; }
+    .aq-qa .right-col .per span:first-child {
+      margin-left: 14px; }
+    .aq-qa .right-col .per span:nth-child(2) {
+      margin-left: 174px; }
+    .aq-qa .right-col .per span:last-child {
+      margin-left: 177px; }
+    .aq-qa .right-col .halfSquare {
+      width: 442px;
+      border: 1px solid #ccc;
+      border-top: none;
+      height: 35px;
+      margin-left: 36px;
+      border-radius: 0 0 5px 5px; }
+      .aq-qa .right-col .halfSquare span {
+        display: inline-block;
+        background: white;
+        padding: 10px;
+        position: relative;
+        top: 13px;
+        font-size: 16px; }
+      .aq-qa .right-col .halfSquare span:first-child {
+        left: 82px; }
+      .aq-qa .right-col .halfSquare span:nth-child(2) {
+        left: 130px; }
+      .aq-qa .right-col .halfSquare span:last-child {
+        left: 175px; }
+
+.aq-process {
+  padding: 30px 0 50px;
+  overflow: hidden; }
+  .aq-process .unit {
+    width: 230px;
+    float: left; }
+    .aq-process .unit .process-icon {
+      float: left;
+      background: #fc3;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      text-align: center;
+      margin-right: 10px; }
+      .aq-process .unit .process-icon img {
+        margin-top: 18px; }
+    .aq-process .unit p {
+      color: #666; }
+    .aq-process .unit p:nth-child(2) {
+      font-size: 18px;
+      margin-top: 16px; }
+  .aq-process .dashedArrow {
+    float: left;
+    width: 60px;
+    height: 50px;
+    margin: 10px 25px 0 0;
+    background: url("/images/cg/aq-cg-8.png") no-repeat center center; }
+
+.aq-bggray {
+  background: #f3f3f3;
+  padding: 30px 0; }
+
+.aq-cg-container {
+  padding: 20px 30px;
+  overflow: hidden;
+  background: white; }
+  .aq-cg-container ul > li {
+    width: 82px;
+    height: 26px;
+    margin-left: 25px;
+    padding: 3px 7px;
+    float: left; }
+    .aq-cg-container ul > li span {
+      color: #d7d7d8; }
+  .aq-cg-container ul {
+    overflow: hidden; }
+    .aq-cg-container ul li:first-child {
+      margin: 0; }
+    .aq-cg-container ul li:nth-child(2) > a {
+      color: #dd3137; }
+    .aq-cg-container ul li:hover > a {
+      color: #dd3137; }
+      .aq-cg-container ul li:hover > a span {
+        color: #dd3137; }
+  .aq-cg-container hr {
+    margin: 20px 0;
+    height: 1px;
+    border: none;
+    border-top: 1px solid #eeeeee; }
+
+.aq-cg-ques {
+  margin-top: 30px;
+  padding: 40px 30px; }
+  .aq-cg-ques h3 {
+    text-align: center;
+    color: #666666; }
+  .aq-cg-ques .lineUnit span {
+    width: 30px;
+    height: 26px;
+    background: url("/images/cg/aq-cg-question.png") center center/contain no-repeat;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    line-height: 26px; }
+  .aq-cg-ques .lineUnit h4 {
+    display: inline-block;
+    color: #666666;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 18px; }
+  .aq-cg-ques .lineUnit p {
+    color: #999999;
+    font-size: 15px;
+    line-height: 30px;
+    margin-left: 35px; }
+
+/*# sourceMappingURL=aq-cg.css.map */
